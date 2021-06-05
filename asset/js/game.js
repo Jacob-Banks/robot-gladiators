@@ -165,7 +165,7 @@ var shop = function () {
     case "refill":
       if (playerMoney >= 7) {
         window.alert("Refilling player's health by 20 for 7 dollars.");
-
+        enemyHealth = randomNumber(40, 60);
         // increase health and decrease money
         playerHealth = playerHealth + 20;
         playerMoney = playerMoney - 7;
