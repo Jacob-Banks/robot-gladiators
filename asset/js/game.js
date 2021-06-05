@@ -165,7 +165,7 @@ var shop = function () {
     case "refill":
       if (playerMoney >= 7) {
         window.alert("Refilling player's health by 20 for 7 dollars.");
-
+        enemyHealth = randomNumber(40, 60);
         // increase health and decrease money
         playerHealth = playerHealth + 20;
         playerMoney = playerMoney - 7;
@@ -174,6 +174,20 @@ var shop = function () {
       }
       break;
     case "UPGRADE":
+      var enemyInfo = [
+        {
+          name: "Roborto",
+          attack: randomNumber(10, 14),
+        },
+        {
+          name: "Amy Android",
+          attack: randomNumber(10, 14),
+        },
+        {
+          name: "Robo Trumble",
+          attack: randomNumber(10, 14),
+        },
+      ];
     case "upgrade":
       if (playerMoney >= 7) {
         window.alert("Upgrading player's attack by 6 for 7 dollars.");
