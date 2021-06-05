@@ -174,6 +174,20 @@ var shop = function () {
       }
       break;
     case "UPGRADE":
+      var enemyInfo = [
+        {
+          name: "Roborto",
+          attack: randomNumber(10, 14),
+        },
+        {
+          name: "Amy Android",
+          attack: randomNumber(10, 14),
+        },
+        {
+          name: "Robo Trumble",
+          attack: randomNumber(10, 14),
+        },
+      ];
     case "upgrade":
       if (playerMoney >= 7) {
         window.alert("Upgrading player's attack by 6 for 7 dollars.");
